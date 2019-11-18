@@ -20,8 +20,10 @@
 }
 @media screen and (max-width: 640px) {
   .box {
-    display: flex;
-    flex-direction: column-reverse;
+    position: static;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 35% 35% 35% 35%;
   }
 }
 
@@ -31,6 +33,11 @@
   z-index: 1;
   width: 620px;
   height: 635px;
+}
+@media screen and (max-width: 640px) {
+  .boxFirst {
+    position: static;
+  }
 }
 .boxFirst:hover {
   z-index: 5;
@@ -116,6 +123,11 @@
   right: 3%;
   z-index: 9;
 }
+@media screen and (max-width: 640px) {
+  .circle__plus:hover::after {
+    display: none;
+  }
+}
 .circle__plus:hover::before {
   position: absolute;
   content: "";
@@ -128,6 +140,11 @@
   bottom: 3%;
   z-index: 9;
 }
+@media screen and (max-width: 640px) {
+  .circle__plus:hover::before {
+    display: none;
+  }
+}
 
 .boxSecond {
   position: absolute;
@@ -136,6 +153,11 @@
   width: 620px;
   height: 635px;
   z-index: 2;
+}
+@media screen and (max-width: 640px) {
+  .boxSecond {
+    position: static;
+  }
 }
 .boxSecond:hover {
   z-index: 6;
@@ -166,6 +188,11 @@
   height: 635px;
   z-index: 3;
 }
+@media screen and (max-width: 640px) {
+  .boxThird {
+    position: static;
+  }
+}
 .boxThird:hover {
   z-index: 7;
 }
@@ -195,6 +222,11 @@
   width: 620px;
   height: 635px;
   z-index: 4;
+}
+@media screen and (max-width: 640px) {
+  .boxFourth {
+    position: static;
+  }
 }
 .boxFourth:hover {
   z-index: 8;
